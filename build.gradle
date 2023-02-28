@@ -30,10 +30,44 @@ allprojects {
             url 'https://dl.google.com/dl/android/maven2/'
         }
         maven {
+            allowInsecureProtocol = true
             url "https://maven.aliyun.com/repository/public"
         }
         maven {
+            allowInsecureProtocol = true
             url 'https://maven.aliyun.com/repository/google'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url "http://mirrors.cloud.tencent.com/nexus/repository/maven-public/"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://artifacts.applovin.com/android'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url "https://android-sdk.is.com"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url "https://sdk.tapjoy.com"
         }
     }
 }

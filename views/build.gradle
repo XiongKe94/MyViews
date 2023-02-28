@@ -26,7 +26,6 @@ android {
 
 dependencies {
     api "androidx.core:core-ktx:$buildConfig.kotlin_ktx_core"
-    api "com.android.support:design:$libConfig.androidx_version"
     api "androidx.appcompat:appcompat:$buildConfig.androidx_appcompat"
     api "com.google.android.material:material:$buildConfig.google_material"
     api "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
