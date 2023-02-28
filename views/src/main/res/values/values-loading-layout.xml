@@ -17,14 +17,13 @@
 <resources>
     <item name="empty_image" type="id" />
     <item name="empty_text" type="id" />
-
     <item name="error_image" type="id" />
     <item name="error_text" type="id" />
     <item name="retry_button" type="id" />
 
     <attr name="styleLoadingLayout" format="reference" />
 
-    <style name="LoadingLayout"></style>
+    <style name="LoadingLayout"/>
 
     <style name="LoadingLayout.Style">
         <item name="llEmptyResId">@layout/_loading_layout_empty</item>
