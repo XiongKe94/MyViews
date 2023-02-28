@@ -1,0 +1,43 @@
+buildscript {
+    apply from: "${rootProject.projectDir}/scripts/version_config.gradle"
+    apply from: "${rootProject.projectDir}/scripts/common_utils.gradle"
+    def libConfig = rootProject.ext.libConfig
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+        classpath 'com.google.gms:google-services:4.3.14'
+    }
+}
+
+allprojects {
+
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol = true
+            url 'https://jitpack.io'
+        }
+
+        maven {
+            allowInsecureProtocol = true
+            //url "https://maven.google.com"
+            url 'https://dl.google.com/dl/android/maven2/'
+        }
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
